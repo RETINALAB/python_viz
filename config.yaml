@@ -1,4 +1,4 @@
-baseURL: pythonviz.netlify.app
+baseURL: https://pythonviz.netlify.app
 languageCode: en-us
 defaultContentLanguage: en-us
 title: python_viz
