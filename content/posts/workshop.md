@@ -19,4 +19,4 @@ This hands-on workshop aims to equip participants with the fundamentals of repro
 
 The workshop will be taught in a similar style to Data Carpentry workshops. Data Carpentry’s mission is to train researchers in the core data skills for efficient, shareable, and reproducible research practices.
 
-Intro Slides: [Click here](/slides/1_intro/1_Python_viz_intro.html)
+Intro Slides: [Click here](/slides/1_intro/1_workshop_intro)
