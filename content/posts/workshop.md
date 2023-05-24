@@ -21,4 +21,4 @@ The workshop will be taught in a similar style to Data Carpentry workshops. Data
 
 Introduction to the workshop: [Click here](/slides/1_intro/1_workshop_intro)
 
-Introduction to R and Python: [Click here](/slides/1_intro/1_RPython_viz_intro) 
+Introduction to R and Python: [Click here](/slides/2_Intro_viz/1_RPython_viz_intro) 
