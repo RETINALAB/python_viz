@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Data Visualization with R and Python</title>
+    <title>Data Visualisation with R and Python</title>
     <meta charset="utf-8" />
     <meta name="author" content="Dr. Thiyanga S. Talagala &amp; Dr. Priyanga D. Talagala" />
     <script src="libs/header-attrs/header-attrs.js"></script>
     <link href="libs/remark-css/default.css" rel="stylesheet" />
     <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
     <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
-    <link href="libs/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
   </head>
   <body>
@@ -16,7 +15,7 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# Data Visualization with R and Python
+# Data Visualisation with R and Python
 ]
 .subtitle[
 ## <span style="color:#279657">Online Certificate course</span>
@@ -41,140 +40,115 @@ class: center, middle, inverse, title-slide
 
 class: inverse, middle, center
 
-# Who we are?
----
-class: center
+# What is Data Visualisation?
 
+--
+
+Data visualization is the act of presenting data in visual formats, such as charts and graphs, to make it easier to understand, analyze, and communicate insights.
+
+---
+class: inverse, middle, center
+
+# "Data visualization should be the first step in any analysis"
+
+&lt;img src="fig/data-science.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+--
+
+# Why?
+
+---
+
+## Allan Paivio's Dual Coding Theory
+
+&lt;img src="fig/dual.jpg" width="70%" style="display: block; margin: auto;" /&gt;
+
+
+---
+class: inverse, middle, center
+
+# Why learn  both R and Python?
+
+&lt;img src="fig/rpython.png" width="50%" style="display: block; margin: auto;" /&gt;
+---
 .pull-left[
 
-&lt;img src="fig/thiyanga2.png" width="40%" style="display: block; margin: auto;" /&gt;
+#### `DSjobtracker` R Package (on CRAN, 2020)
 
-Thiyanga S. Talagala
+DSjobtracker: What Skills and Qualifications are Required for Data Science Related Jobs?
 
-PhD, Monash University, Australia
+&lt;font size="4"&gt;by Statistical Consultancy Service, &lt;br/&gt;
+University of Sri Jayewardenepura, 2020
+https://thiyangt.github.io/DSjobtracker/
+ &lt;/font&gt;
 
-Senior Lecturer, University of Sri Jayewardenepura
-
-<i class="fas  fa-globe "></i>
-thiyanga.netlify.app
-
-<i class="fab  fa-github "></i><i class="fab  fa-twitter "></i>
-thiyangt
+&lt;img src="fig/DSjobtrackerhexsticker.png" width="50%" style="display: block; margin: auto;" /&gt;
 
 ].pull-right[
 
-&lt;img src="fig/priyanga2.png" width="40%" style="display: block; margin: auto;" /&gt;
+#### Top twenty skills required for data science jobs
 
-Priyanga D. Talagala
-
-PhD, Monash University, Australia
-
-Senior Lecturer, University of Moratuwa
-
-<i class="fas  fa-globe "></i>
-prital.netlify.app
-
-<i class="fab  fa-github "></i><i class="fab  fa-twitter "></i>
-pridiltal
+&lt;img src="1_RPython_viz_intro_files/figure-html/unnamed-chunk-5-1.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
-
+&lt;!--Both of these datasets contain information about job vacancies related to data science--&gt;
 ---
+
 
 class: inverse, middle, center
 
-### Co-founders and co-organizers of R Ladies Colombo
-
-## R-Ladies Global 
-
-&lt;img src="fig/globalhexSticker.png" width="20%" style="display: block; margin: auto;" /&gt;
-
-<i class="fas  fa-globe "></i>
-https://rladies.org/
-
-<i class="fab  fa-twitter "></i>
-RLadiesGlobal
+# R Vs Python 
 
 ---
-background-image:url('fig/talks.jpg')
-background-position: 60% 100%
+class: inverse, middle, center
+
+
+# ~~R Vs Python~~
+
+# R AND Python 
+--
+
+&lt;img src="1_RPython_viz_intro_files/figure-html/unnamed-chunk-6-1.png" width="40%" style="display: block; margin: auto;" /&gt;
+---
+class: inverse, middle, center
+
+
+# ~~R Vs Python~~
+
+# R AND Python 
+
+&lt;!--<span>&lt;i class="fas  fa-bell faa-ring animated faa-fast "&gt;&lt;/i&gt;</span>
+--&gt;
+
+
+&lt;img src="fig/Rlogo.png" width="15%" style="display: block; margin: auto;" /&gt;
+
+ +
+&lt;img src="fig/python.png" width="20%" style="display: block; margin: auto;" /&gt;
+
+
+
+---
+background-image:url('fig/posit.png')
+background-position: 50% 50%
 background-size: 100%
-class: top, center
-
-.pull-left[
-## R-Ladies Global 
-### &lt;span style="color:black"&gt; 216 Chapters&lt;/span&gt;
-
-### &lt;span style="color:black"&gt; 100267 Members &lt;/span&gt;
-
-### &lt;span style="color:black"&gt; 61 Countries&lt;/span&gt;
-]
-.pull-right[
-&lt;img src="fig/RL.png" width="100%" style="display: block; margin: auto;" /&gt;
-&lt;font size="2"&gt; Source: https://benubah.github.io/r-community-explorer/rladies.html&lt;/font&gt;
-]
-
----
-
-background-image:url('fig/Rjourney2.png')
-background-position: 50% 50%
-background-size: 110%
 class: top, center, inverse
----
-background-image:url('fig/Rjourney1.png')
-background-position: 50% 50%
-background-size: 110%
-class: top, center, inverse
----
-class:  middle, center
 
-# Why RLadies Colombo?
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="fig/RL.png" alt="R-Ladies Across Regions" width="80%" /&gt;
-&lt;p class="caption"&gt;R-Ladies Across Regions&lt;/p&gt;
-&lt;/div&gt;
-&lt;font size="2"&gt; Source: https://benubah.github.io/r-community-explorer/rladies.html&lt;/font&gt;
 ---
 
-.pull-left[
-# R-Ladies Colombo
-]
-.pull-right[
-<i class="fas  fa-globe "></i>
-rladiescolombo.netlify.app
-
-<i class="fab  fa-twitter "></i>
-RLadiesColombo
-
-<i class="fab  fa-meetup "></i>
-www.meetup.com/rladies-colombo/
-]
-
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="fig/RLcol.png" alt="R-Ladies Across Regions" width="70%" /&gt;
-&lt;p class="caption"&gt;R-Ladies Across Regions&lt;/p&gt;
-&lt;/div&gt;
----
 class: inverse, middle, center
 
-## Main developer and  the main maintainer of several R packages on CRAN
+# Problem-Solving Focus
 
+--
 
-&lt;div class="figure" style="text-align: center"&gt;
-&lt;img src="fig/cran.png" alt="R-Ladies Across Regions" width="80%" /&gt;
-&lt;p class="caption"&gt;R-Ladies Across Regions&lt;/p&gt;
-&lt;/div&gt;
+## Language is just one component of the overall problem-solving process
 
 ---
-class: inverse, center, middle
-# Code of conduct
 
-This workshop series is dedicated to providing a harassment-free experience for &lt;span style="color:#8dcefc"&gt; EVERYONE&lt;/span&gt;.
-
-To ensure a &lt;span style="color:#8dcefc"&gt; safe, enjoyable&lt;/span&gt; , and &lt;span style="color:#8dcefc"&gt; friendly&lt;/span&gt; experience for everyone who participates, we follow the [Workshop Code of Conduct](https://hellormd.netlify.app/2022/10/code-of-conduct/) 
-
-This code of conduct applies to all the spaces, including online workshops, Twitter, mailing lists, both online and offline.
-
-
+background-image:url('fig/superpower.png')
+background-position: 50% 50%
+background-size: 50%
+class: top, center
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
