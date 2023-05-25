@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Reproducible Research with Jupyter Notebook</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Dr. Priyanga D. Talagala" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/remark-css/default.css" rel="stylesheet" />
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# Reproducible Research with Jupyter Notebook
+]
+.subtitle[
+## <span style="color:#279657">Online Certificate course</span>
+]
+.author[
+### Dr. Priyanga D. Talagala
+]
+.institute[
+### <span style="color:#279657">Institute of Applied Statistics Sri Lanka (IASSL)</span>
+]
+.date[
+### <span style="color:#279657">25-05-2023 to 28-05-2023</span></br> </br> <span style="color:#8dcefc"> Workshop Materials available at </br> <a href="https://pythonandr.netlify.app" class="uri">https://pythonandr.netlify.app</a></span><span>&lt;i class="fas  fa-globe fa-2x faa-ring animated faa-fast " style=" color:white;"&gt;&lt;/i&gt;</span>
+]
+
+---
+
+
+
+
+
+
+
+class: inverse, middle, center
+
+- RStudio is the most popular and widely used Integrated Development Environment (IDE) for R programming. 
+
+-  Python has a wide variety of Integrated Development Environments (IDEs) available, which can sometimes be overwhelming for beginners.
+
+- Ultimately, the best choice depends on your specific requirements, workflow, and personal preferences.
+---
+
+
+#### The State of Developer Ecosystem 2022
+
+.pull-left[
+-  sixth annual survey conducted by JetBrains to capture the landscape of the developer community
+
+-  29,269 developers
+
+].pull-right[
+&lt;img src="fig/1_IDE.png" width="90%" style="display: block; margin: auto;" /&gt;
+]
+
+
+&lt;!--
+
+survey reports Available at: https://www.jetbrains.com/lp/devecosystem-2022/
+
+
+- This report has been created based on the responses of 29,269 developers from around the world who participated in our study in May–July 2022.
+
+- It covers a wide range of topics, including programming languages, tools, technologies, demographics, and even fun facts, as well as the lifestyle of developers.
+--&gt;
+
+
+---
+
+
+class: inverse, middle, center
+
+# The closest equivalent to RMarkdown in Python is Jupyter Notebook 
+
+- PyCharm and Visual Studio Code (VS Code) are commonly used by developers.
+
+- Jupyter Notebook is  more popular among data scientists compared to PyCharm and Visual Studio Code (VS Code).
+
+&lt;!--
+
+Data Exploration and Visualization Challenges
+
+- VS Code: While VS Code supports various data visualization libraries and extensions, Jupyter Notebook provides a more integrated and interactive environment for visualizations. In VS Code, visualizations might require additional configuration and setup compared to Jupyter Notebook.
+
+
+- PyCharm: PyCharm has support for data visualization libraries, but it may require more manual effort to generate and display visualizations compared to the interactive capabilities of Jupyter Notebook.
+
+--&gt;
+
+---
+
+## Jupyter notebook
+
+
+- Open-source web-based interactive computing environment that allows you to create and share documents containing live code, visualizations, narrative text, equations, and interactive elements.
+
+--
+
+- It provides an interface where you can write and execute code, view the results, and combine it with explanatory text and rich media content.
+
+--
+
+- The name "Jupyter" is a combination of three programming languages: Julia, Python, and R, which were the initial languages supported when it was first developed. 
+
+--
+
+- One of the most important advantages of Jupyter Notebook is its support for reproducibility.
+
+--
+
+- Jupyter Notebook provides a complete record of the code, data, and analysis steps, allowing others to reproduce the results and verify the findings
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": false
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
