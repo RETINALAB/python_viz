@@ -1,6 +1,6 @@
 ---
 title: "Reproducible Research with Jupyter Notebook"
-subtitle: <span style="color:#279657">Online Certificate course</span>
+subtitle: <span style="color:#279657">Online Certificate Course</span>
 institute: <span style="color:#279657">Institute of Applied Statistics Sri Lanka (IASSL)</span>
 author: "Dr. Priyanga D. Talagala"
 date: <span style="color:#279657">25-05-2023 to 28-05-2023</span></br> </br> <span style="color:#8dcefc"> Workshop Materials available at </br> https://pythonandr.netlify.app</span>`r anicon::faa("globe", animate="ring", size =2, speed = "fast", colour = "white")`
