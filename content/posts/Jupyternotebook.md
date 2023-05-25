@@ -14,5 +14,8 @@ title: Reproducible Research with Jupyter Notebook
 Why Jupyter Notebook: [Click here](/slides/4_Jupyter/4_Jupyternotebook)
 
 
-How to install Jupyter environment?: [Click here](/slides/4_Jupyter/Jupyter_Notebook)
+How to install Jupyter environment? [Click here](/slides/4_Jupyter/Jupyter_Notebook)
+
+
+Working with Python Libraries [Click here](/slides/4_Jupyter/Working_with_Python_libraries)
 
