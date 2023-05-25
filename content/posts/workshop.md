@@ -15,9 +15,11 @@ This workshop website is developed and maintained by Dr. Priyanga D. Talagala. T
 
 ![](/img/workshop.jpg)
 
-This hands-on workshop aims to equip participants with the fundamentals of reproducible research with R Markdown and related tools. This is designed for those who have no or little prior experience with R Markdown and who want to learn Quarto the next generation of R Markdown for publishing, including dynamic and static documents and multi-lingual programming language support.
+This interactive workshop offers participants a practical introduction to Data Visualization using Python and associated tools. Designed specifically for individuals with limited or no prior experience in Python, this workshop provides a comprehensive foundation in Python programming and data visualization techniques.
 
-The workshop will be taught in a similar style to Data Carpentry workshops. Data Carpentry’s mission is to train researchers in the core data skills for efficient, shareable, and reproducible research practices.
+Following the principles of Data Carpentry, the workshop focuses on equipping researchers with essential data skills for efficient, shareable, and reproducible research practices. By the end of the workshop, participants will have gained proficiency in Python and be able to create visually appealing and informative data visualizations.
+
+Whether you're a beginner in Python or seeking to enhance your data visualization abilities, this hands-on workshop provides a supportive learning environment where you can develop the fundamental skills necessary for effective data visualization.
 
 Introduction to the workshop: [Click here](/slides/1_intro/1_workshop_intro)
 
