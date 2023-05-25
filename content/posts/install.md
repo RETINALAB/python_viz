@@ -3,7 +3,7 @@ categories:
 - workshop
 date: "2022-5-23"
 tags:
-thumbnailImage: img/workshop.jpg
+thumbnailImage: img/python.png
 thumbnailImagePosition: left
 title: Install Python
 ---
