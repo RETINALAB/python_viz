@@ -3,7 +3,7 @@ title: "Data Visualisation with R and Python"
 subtitle: <span style="color:#279657">Online Certificate course</span>
 institute: <span style="color:#279657">Institute of Applied Statistics Sri Lanka (IASSL)</span>
 author: "Dr. Thiyanga S. Talagala & Dr. Priyanga D. Talagala"
-date: <span style="color:#279657">25-05-2023 to 28-05-2023</span></br> </br> <span style="color:#8dcefc"> Workshop Materials available at </br> hellormd.netlify.app </span>`r anicon::faa("globe", animate="ring", size =2, speed = "fast", colour = "white")`
+date: <span style="color:#279657">25-05-2023 to 28-05-2023</span></br> </br> <span style="color:#8dcefc"> Workshop Materials available at </br> https://pythonandr.netlify.app </span>`r anicon::faa("globe", animate="ring", size =2, speed = "fast", colour = "white")`
 output:
   xaringan::moon_reader:
     css: ["default", "xaringan-themer.css" ]
