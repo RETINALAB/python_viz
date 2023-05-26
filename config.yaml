@@ -56,6 +56,11 @@ menu:
       pre: <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
       url: /#about
       weight: 6
+    - identifier: Recordings
+      name: Recordings
+      pre: <i class="sidebar-button-icon fas fa-solid fa-hand-point-right" aria-hidden="true"></i>
+      url: https://www.youtube.com/playlist?list=PLhd2fnkLi-lndFSjauOUsyukwBlgRfjAX
+      weight: 7
 params:
   autoThumbnailImage: yes
   clearReading: yes
