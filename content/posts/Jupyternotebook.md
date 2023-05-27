@@ -10,7 +10,6 @@ title: Reproducible Research with Jupyter Notebook
 
 
 
-
 Why Jupyter Notebook: [Click here](/slides/4_Jupyter/4_Jupyternotebook)
 
 
@@ -28,4 +27,4 @@ Jupyter Notebook CheatSheet [Click here](https://www.edureka.co/blog/wp-content/
 
 
 
-[Download Data File](data/titanic.csv)
+[Download Data File](https://github.com/RETINALAB/titanicdataset/blob/main/titanic.csv)
