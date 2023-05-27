@@ -26,3 +26,6 @@ Working with Python Libraries [Click here](/slides/4_Jupyter/Working_with_Python
 
 Jupyter Notebook CheatSheet [Click here](https://www.edureka.co/blog/wp-content/uploads/2018/10/Jupyter_Notebook_CheatSheet_Edureka.pdf)
 
+
+
+[Download Data File](data/titanic.csv)
