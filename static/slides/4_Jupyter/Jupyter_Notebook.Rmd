@@ -1,5 +1,6 @@
 ---
 title: "Jupyter Notebooks"
+subtitle: "IASSL Workshop on Data visualization with R and Python"
 author: "Dr. Priyanga D. Talagala"
 date: "2023-05-25"
 output:
