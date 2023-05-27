@@ -1,7 +1,7 @@
 ---
 categories:
 - workshop
-date: "2022-5-23"
+date: "2023-5-22"
 tags:
 thumbnailImage: img/jupyter.png
 thumbnailImagePosition: left
